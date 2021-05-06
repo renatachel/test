@@ -1,0 +1,105 @@
+#pirmais-paragrafs {
+    font-size: 40px;
+    margin-top: 0;
+}
+p {
+    color: violet;
+}
+.red {
+    color: red;
+    font-weight: bold;
+}
+#header {
+    width: 100%;
+    height: 150px;
+    background-color: orange;
+}
+#sidebar {
+    width: 30%;
+    height: 600px;
+    background-color: plum;
+    float: left;
+}
+#content {
+    width: 70%;
+    height: 600px;
+    background-color: powderblue;
+    margin-left: 30%;
+}
+#footer{
+    width: 100%;
+    height: 100px;
+    background-color: saddlebrown;
+}
+li:hover {
+    text-decoration: underline;
+}
+
+.latvija {
+    width: 500px;
+}
+
+.attels-1 {
+    width: 60px;
+    position: absolute;
+    top: 120px;
+    left: 200px;
+    transition: opacity 2s, scale 2s, transform 2s;
+}
+
+.attels-2 {
+    width: 60px;
+    position: absolute;
+    top: 180px;
+    left: 380px;
+    transition: top 2s;
+}
+
+.attels-1:hover {
+    opacity: 0.1;
+    scale: 8;
+    transform: rotate(890deg);
+}
+
+.attels-2:hover {
+    top: 150px;
+}
+
+.karte {
+    position: relative;
+}
+
+.spriditis {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100px;
+    animation-name: go;
+    animation-duration: 10s;
+}
+
+@keyframes go {
+    from {
+        top: 0px;
+        left: 0px;
+    }
+
+    25% {
+        top: 0px;
+        left: 400px;
+    }
+    50% {
+        top: 200px;
+        left: 400px;
+    }
+
+    75% {
+        top: 150px;
+        left: 0px;
+    }
+
+    to {
+        top: 0px;
+        left: 0px;
+    }
+}
